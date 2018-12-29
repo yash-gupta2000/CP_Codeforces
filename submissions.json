@@ -1011,6 +1011,21 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF47706012": {
+    "contest_id": 1090,
+    "language": "GNU C++17",
+    "path": "codeforces\\1090\\M.cpp",
+    "problem_index": "M",
+    "problem_name": "The Pleasant Walk",
+    "problem_url": "https://codeforces.com/contest/1090/problem/M",
+    "submission_id": "CF47706012",
+    "submission_url": "https://codeforces.com/contest/1090/submission/47706012",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Dec/30/2018 01:53"
+  },
   "CF47716969": {
     "contest_id": 268,
     "language": "GNU C++17",
