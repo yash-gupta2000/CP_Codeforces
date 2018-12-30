@@ -1011,6 +1011,21 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF47716969": {
+    "contest_id": 268,
+    "language": "GNU C++17",
+    "path": "codeforces\\268\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Games",
+    "problem_url": "https://codeforces.com/contest/268/problem/A",
+    "submission_id": "CF47716969",
+    "submission_url": "https://codeforces.com/contest/268/submission/47716969",
+    "tags": [
+      "brute force",
+      "*800"
+    ],
+    "timestamp": "Dec/30/2018 13:59"
+  },
   "CF47717229": {
     "contest_id": 472,
     "language": "GNU C++17",
