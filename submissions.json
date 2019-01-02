@@ -1011,6 +1011,23 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF47831074": {
+    "contest_id": 500,
+    "language": "GNU C++17",
+    "path": "codeforces\\500\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "New Year Transportation",
+    "problem_url": "https://codeforces.com/contest/500/problem/A",
+    "submission_id": "CF47831074",
+    "submission_url": "https://codeforces.com/contest/500/submission/47831074",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Jan/02/2019 12:16"
+  },
   "CF48050349": {
     "contest_id": 1097,
     "language": "GNU C++17",
