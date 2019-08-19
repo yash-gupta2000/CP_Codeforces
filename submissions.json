@@ -1011,6 +1011,21 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF59093071": {
+    "contest_id": 1203,
+    "language": "GNU C++17",
+    "path": "codeforces\\1203\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Circle of Students",
+    "problem_url": "https://codeforces.com/contest/1203/problem/A",
+    "submission_id": "CF59093071",
+    "submission_url": "https://codeforces.com/contest/1203/submission/59093071",
+    "tags": [
+      "implementation",
+      "*1000"
+    ],
+    "timestamp": "Aug/19/2019 18:49"
+  },
   "CF59119577": {
     "contest_id": 1203,
     "language": "GNU C++17",
