@@ -1,47 +1,51 @@
-/*
-author: Yash Gupta
-*/
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#define int long long
-#define all(x) x.begin(),x.end()
-#define IOS ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#define endl "\n"
-#define mem(x,y) memset(x,y,sizeof(x))
-#define pb push_back
-#define mp make_pair
-#define fir first
-#define sec second
-const int N = 2e5 + 5;
-const int inf = 9e18 + 9;
-const int mod = 1e9+7;
-vector<int> a;
+typedef long long ll;
 
-void solve()
+int main()
 {
-	 int n;cin>>n;
-	 vector<int> a(n);
-	 for(int i=0;i<n;i++){
-		 cin>>a[i];
-	 }
-	 int res=0;
-	 int prev =a[n-1];
-	 for(int i=n-2;i>=0;i--){
-		 if(a[i] > prev){
-			 res++;
-		 }
-		 prev = min(prev,a[i]);
-	 }
-	 cout<<res<<endl;
-	 
-}
- 
-int32_t main()
-{
-	IOS;int t = 1;
-	cin>>t;
-	for(int i=1;i<=t;i++)
-	{
-		solve();
-	}
+  ll q;cin>>q;
+  while(q--)
+  {
+    ll n;
+    cin>>n;
+    ll a[n];
+    vector<ll> v(n,0);
+    ll cnt=0;
+    
+    for(int i=0;i<n;i++)
+    {
+      cin>>a[i];
+    }
+    ll min = a[n];
+    for(int i = n-1;i>=0;i--)
+    {
+      if(a[i]<min)
+      {
+        min =a[i];
+        v[i] = min;
+      }
+      else
+      {
+      	v[i] = min;
+      }
+    }
+
+    // for(int i=0;i<n;i++)
+    // {
+    //   cout<<v[i];
+    // }
+    for(int i=0;i<n;i++)
+    {
+    	if(v[i]!=a[i])
+    	{
+    		cnt++;
+    	}
+    	else
+    	{
+    		continue;
+    	}
+    }
+    cout<<cnt<<endl;
+  }
 }
