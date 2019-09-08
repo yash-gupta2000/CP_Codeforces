@@ -1,5 +1,5 @@
-x = int(input())
-if(x>2 and x%2==0):
+w = int(input())
+if(w>2 and w%2==0):
     {
         print("YES")
     }
