@@ -1011,6 +1011,21 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF60248663": {
+    "contest_id": 1,
+    "language": "Python 3",
+    "path": "codeforces\\1\\A.py",
+    "problem_index": "A",
+    "problem_name": "Theatre Square",
+    "problem_url": "https://codeforces.com/contest/1/problem/A",
+    "submission_id": "CF60248663",
+    "submission_url": "https://codeforces.com/contest/1/submission/60248663",
+    "tags": [
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Sep/08/2019 10:38"
+  },
   "CF60250044": {
     "contest_id": 118,
     "language": "Python 3",
