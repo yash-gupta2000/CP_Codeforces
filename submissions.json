@@ -1011,6 +1011,22 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF60681003": {
+    "contest_id": 785,
+    "language": "GNU C++17",
+    "path": "codeforces\\785\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Anton and Classes",
+    "problem_url": "https://codeforces.com/contest/785/problem/B",
+    "submission_id": "CF60681003",
+    "submission_url": "https://codeforces.com/contest/785/submission/60681003",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1100"
+    ],
+    "timestamp": "Sep/16/2019 19:25"
+  },
   "CF60705380": {
     "contest_id": 363,
     "language": "GNU C++17",
