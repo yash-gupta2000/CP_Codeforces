@@ -1011,6 +1011,23 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF62873167": {
+    "contest_id": 1244,
+    "language": "GNU C++17",
+    "path": "codeforces\\1244\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "The Football Season",
+    "problem_url": "https://codeforces.com/contest/1244/problem/C",
+    "submission_id": "CF62873167",
+    "submission_url": "https://codeforces.com/contest/1244/submission/62873167",
+    "tags": [
+      "brute force",
+      "math",
+      "number theory",
+      "*2000"
+    ],
+    "timestamp": "Oct/18/2019 19:56"
+  },
   "CF62881715": {
     "contest_id": 1165,
     "language": "GNU C++17",
