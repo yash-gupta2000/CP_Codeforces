@@ -1011,6 +1011,22 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF64311857": {
+    "contest_id": 1245,
+    "language": "GNU C++17",
+    "path": "codeforces\\1245\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Good ol' Numbers Coloring",
+    "problem_url": "https://codeforces.com/contest/1245/problem/A",
+    "submission_id": "CF64311857",
+    "submission_url": "https://codeforces.com/contest/1245/submission/64311857",
+    "tags": [
+      "math",
+      "number theory",
+      "*1000"
+    ],
+    "timestamp": "Nov/05/2019 18:29"
+  },
   "CF64319526": {
     "contest_id": 1256,
     "language": "GNU C++17",
