@@ -40,7 +40,8 @@ void solve()
     int n;cin>>n;
     vector<int> v[3];
     for(int i=0;i<n;i++)
-    {        int x;cin>>x;
+    {
+        int x;cin>>x;
         v[0].pb(x);
         v[1].pb(x-1);//decrement
         v[2].pb(x+1);//increment
