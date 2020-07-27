@@ -1011,6 +1011,21 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF88147738": {
+    "contest_id": 454,
+    "language": "GNU C++17",
+    "path": "codeforces\\454\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Little Pony and Sort by Shift",
+    "problem_url": "https://codeforces.com/contest/454/problem/B",
+    "submission_id": "CF88147738",
+    "submission_url": "https://codeforces.com/contest/454/submission/88147738",
+    "tags": [
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Jul/27/2020 22:47"
+  },
   "CF88180444": {
     "contest_id": 632,
     "language": "GNU C++17",
