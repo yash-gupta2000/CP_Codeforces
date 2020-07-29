@@ -1,3 +1,4 @@
+
 //It doesn't matter how slow you go, Unless you don't stop.
 #include <iostream>
 #include <algorithm>
@@ -53,7 +54,6 @@ void solve()
 		single_ans = max(single_ans, freq[i]);
 	}
 	int res = s.size() - single_ans;
-    /* We are bruteforcing subsequence of maximum length that can be formed with s.*/
 	for (int i = 0; i <= 9; i++)
 	{
 		for (int j = 0; j <= 9; j++)
@@ -62,6 +62,7 @@ void solve()
 			int len = 0;
 			for (int k = 0; k < s.size(); k++)
 			{
+
 				if (flag && s[k] == i + '0')
 				{
 					flag = false;
@@ -73,7 +74,6 @@ void solve()
 					len++;
 				}
 			}
-            //If odd then it will contradict with equal right and left cyclic shifts.
 			if (len % 2)
 			{
 				len--;
