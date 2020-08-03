@@ -22,10 +22,9 @@ void dfs(int num)
 int32_t main()
 {
 	IOS;
-	cin>>n;
-	//cout<<x<<" "<<y<<endl;
+	cin>>n>>x>>y;
 	for(x=0;x<=9;x++)
-		for(y=x+1;y<=9;y++)
+		for(y=x;y<=9;y++)
 			dfs(0);
 	cout<<s.size()-1;
 	return 0;
