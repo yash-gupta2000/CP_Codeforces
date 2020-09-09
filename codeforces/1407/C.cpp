@@ -45,22 +45,20 @@ void solve()
      for(int i=0;i<=n;i++){
          res[i] = -1;
      }
-     int mx = 1;
-     for(int i=2;i<=n;i++){
-         int first,second;
-         cout<<"?"<<" "<<i<<" "<<mx<<endl;
-         cin>>first;
-         cout.flush();
-         cout<<"?"<<" "<<mx<<" "<<i<<endl;
-         cin>>second;
-         cout.flush();
-         if(first > second){
-             res[i-1] = first;
-         }
-         else{
-             res[mx-1] = second;
-             mx = i;
-         }
+     int current_max_pos = 1;
+     for(int cur_pos=2;cur_pos<=n;cur_pos++){
+         int one_two;
+            int two_one;
+            cout << "? " << cur_pos << " " << current_max_pos << endl; //n
+            cin >> two_one;
+            cout << "? " << current_max_pos << " " << cur_pos << endl; //n
+            cin >> one_two;
+            if (two_one < one_two) {
+                res[current_max_pos - 1] = one_two;
+                current_max_pos = cur_pos;
+            } else {
+                res[cur_pos - 1] = two_one;
+            }
      }
      cout<<"!"<<" ";
      for(int i=0;i<n;i++){
