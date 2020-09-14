@@ -34,22 +34,33 @@ typedef map<LL,LL> mp64;
 #define all(x) x.begin(),x.end()
 #define mem(x,y) memset(x,y,sizeof(x))
 #define DANGER std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
-const int N = 1000010;
+const int N=1e5+5;
+LL dp[500005];
+map<LL,LL> m;
+LL go(int pos){
+    if(pos < 1){
+        return 0;
+    }
+    if(dp[pos]!=-1){
+        return dp[pos];
+    }
+    dp[pos] = max(m[pos]*pos + go(pos-2),go(pos-1));
+    return dp[pos];
+}
 void solve()
 {
-     vector <LL> dp(100000, 0);
-    LL n, x;
-    cin>>n;
-    for (int i = 0; i < n; ++i)
-    {
-        cin>>x;
-        dp[x]++;
-    }
-    for (int i = 2; i < 100001; ++i)
-    {
-        dp[i] = max(dp[i-1] , dp[i]*i + dp[i -2]);
-    }
-    cout<<dp[100000];
+     int n;cin>>n;
+     memset(dp,-1,sizeof dp);
+     LL mx = -1;
+     for(int i=0;i<n;i++){
+         LL a;
+         cin>>a;
+         m[a]++;
+         mx = max(mx,a);
+     }
+     //cout<<m[100]<<endl;
+     LL ans = go(mx);
+     cout<<ans<<endl;
 }
  
 int main()
