@@ -1011,6 +1011,24 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF93609758": {
+    "contest_id": 264,
+    "language": "GNU C++17",
+    "path": "codeforces\\264\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Escape from Stones",
+    "problem_url": "https://codeforces.com/contest/264/problem/A",
+    "submission_id": "CF93609758",
+    "submission_url": "https://codeforces.com/contest/264/submission/93609758",
+    "tags": [
+      "constructive algorithms",
+      "data structures",
+      "implementation",
+      "two pointers",
+      "*1200"
+    ],
+    "timestamp": "Sep/24/2020 10:38"
+  },
   "CF93616528": {
     "contest_id": 225,
     "language": "GNU C++17",
