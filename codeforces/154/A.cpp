@@ -22,20 +22,19 @@ int go(int idx,int last){
     if(idx == s.size()){
         return 0;
     }
-    if(dp[idx][last]!=-1){
-        return dp[idx][last];
-    }
+    if(vis[idx][last] == false){
+        vis[idx][last] = true;
         dp[idx][last] = go(idx+1,last)+1;
         if(pairs[s[idx]-'a'][last] == false){
             dp[idx][last] = min(dp[idx][last], go(idx + 1, s[idx] - 'a'));
         }
+    }
     return dp[idx][last];
 }
 void solve()
 {
     cin>>s;
     int n;cin>>n;
-    mem(dp,-1);
     for(int i=0;i<n;i++){
         string x;cin>>x;
         pairs[x[0]-'a'][x[1]-'a'] = pairs[x[1]-'a'][x[0]-'a'] = true;
