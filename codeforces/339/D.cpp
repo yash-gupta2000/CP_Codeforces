@@ -3,7 +3,7 @@ author: Yash Gupta
 */
 #include <bits/stdc++.h>
 using namespace std;
-#define int long long
+// #define int long long
 #define all(x) x.begin(),x.end()
 #define IOS ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 #define endl "\n"
