@@ -1,89 +1,65 @@
-/*
-author: Yash Gupta
-*/
-#include <bits/stdc++.h>
+//               luCk == KiSmAt == lUcky
+#include "bits/stdc++.h"
 using namespace std;
-// #define int long long
-#define all(x) x.begin(),x.end()
-#define IOS ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-#define endl "\n"
-#define mem(x,y) memset(x,y,sizeof(x))
-#define pb push_back
-#define mp make_pair
-#define fir first
-#define sec second
-const int N = 4e5 + 5;
-const int inf = 9e18 + 9;
-const int mod = 1e9+7;
-vector<int> a(N);
-int st[N];
-void build(int node, int L, int R, int parity)
-{
-	if(L==R)
-	{
-		st[node]=a[L];
-		return;
-	}
-	int M=(L+R) >> 1;
-	build(2*node,L,M,parity^1);
-	build(2*node+1,M+1,R,parity^1);
-	if(parity)
-	{
-		st[node]=st[2*node] | st[2*node+1];
-	}
-	else
-	{
-		st[node]=st[2*node] ^ st[2*node+1];
-	}
+
+typedef long long  ll;
+const int N= 1 << 21;    
+
+ll a[N];
+ll seg[4 * N];
+ll flag;
+
+ll build(ll str, ll end, ll node, ll reki){
+    if(str == end){
+        seg[node] = a[str];
+        return seg[node];
+    }
+    ll m = str + end >> 1;
+    if(reki){ 
+        seg[node] = build(str, m, node * 2, reki ^ 1) | build(m + 1, end, node * 2 + 1, reki ^ 1);
+    }
+    else{
+        seg[node] = build(str, m, node * 2, reki ^ 1) ^ build(m + 1, end, node * 2 + 1, reki ^ 1);
+    }
+    return seg[node];
 }
- 
-void update(int node, int L, int R, int pos, int newval, int parity)
-{
-	if(L==R)
-	{
-		st[node]=newval;
-		return;
-	}
-	int M=(L+R)>>1;
-	if(pos<=M)
-		update(2*node,L,M,pos,newval,parity^1);
-	else
-		update(2*node+1,M+1,R,pos,newval,parity^1);
-	if(parity)
-	{
-		st[node]=st[2*node] | st[2*node+1];
-	}
-	else
-	{
-		st[node]=st[2*node] ^ st[2*node+1];
-	}
+
+void update(ll str, ll end, ll node, ll idx, ll val, ll reki){
+    if(str == end){
+        seg[node] = val;
+    }
+    else{
+        ll m = str + end >> 1;
+        if(str <= idx and idx <= m){
+            update(str, m, node * 2, idx, val, reki ^ 1);
+        }
+        if(m < idx and idx <= end){
+            update(m + 1, end, node * 2 + 1, idx, val, reki ^ 1);
+        }
+        if(reki){
+            seg[node] = seg[node * 2] | seg[node * 2 + 1];
+        }
+        else{
+            seg[node] = seg[node * 2] ^ seg[node * 2 + 1];
+        }
+    }
 }
-void solve()
+
+int main()
 {
-	int n,m;
-	 cin>>n>>m;
-	int sz=1<<n;
-	for(int i=0;i<sz;i++)
-	{
-		cin>>a[i];		
-	}
-	build(1, 0, sz-1, n&1);
-	while(m--)
-	{
-		int a,b;
-		cin>>a>>b;
-		a--;
-		update(1, 0, sz-1, a, b, n&1);
-		cout<<st[1]<<endl;
-	}
-}
- 
-int32_t main()
-{
-	IOS;int t = 1;
-	// cin>>t;
-	for(int i=1;i<=t;i++)
-	{
-		solve();
-	}
+    ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
+    ll n, q, idx, val, reki;
+    cin >> n >> q;
+    reki = (n & 1);
+    n = 1 << n; 
+    for (int i = 1; i <= n; ++i){
+        cin >> a[i];
+    }
+    build(1, n, 1, reki);
+    while(q--){
+        cin >> idx >> val;
+        update(1, n, 1, idx, val, reki);
+        cout << seg[1] << "\n";
+    }
+    return 0;
 }
