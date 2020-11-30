@@ -1011,6 +1011,23 @@
     ],
     "timestamp": "Dec/17/2020 18:13"
   },
+  "CF99960455": {
+    "contest_id": 1006,
+    "language": "GNU C++17",
+    "path": "codeforces\\1006\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Polycarp's Practice",
+    "problem_url": "https://codeforces.com/contest/1006/problem/B",
+    "submission_id": "CF99960455",
+    "submission_url": "https://codeforces.com/contest/1006/submission/99960455",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1200"
+    ],
+    "timestamp": "Nov/30/2020 12:47"
+  },
   "CF99961393": {
     "contest_id": 1006,
     "language": "GNU C++17",
