@@ -1,4 +1,20 @@
 {
+  "CF100122136": {
+    "contest_id": 779,
+    "language": "GNU C++17",
+    "path": "codeforces\\779\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "String Game",
+    "problem_url": "https://codeforces.com/contest/779/problem/D",
+    "submission_id": "CF100122136",
+    "submission_url": "https://codeforces.com/contest/779/submission/100122136",
+    "tags": [
+      "binary search",
+      "strings",
+      "*1700"
+    ],
+    "timestamp": "Dec/01/2020 20:01"
+  },
   "CF100205950": {
     "contest_id": 195,
     "language": "GNU C++17",
