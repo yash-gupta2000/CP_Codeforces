@@ -1,4 +1,20 @@
 {
+  "CF101078889": {
+    "contest_id": 1183,
+    "language": "GNU C++17",
+    "path": "codeforces\\1183\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Candy Box (easy version)",
+    "problem_url": "https://codeforces.com/contest/1183/problem/D",
+    "submission_id": "CF101078889",
+    "submission_url": "https://codeforces.com/contest/1183/submission/101078889",
+    "tags": [
+      "greedy",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Dec/13/2020 13:05"
+  },
   "CF101079292": {
     "contest_id": 1183,
     "language": "GNU C++17",
