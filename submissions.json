@@ -1,4 +1,21 @@
 {
+  "CF101100633": {
+    "contest_id": 1114,
+    "language": "GNU C++17",
+    "path": "codeforces\\1114\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Got Any Grapes?",
+    "problem_url": "https://codeforces.com/contest/1114/problem/A",
+    "submission_id": "CF101100633",
+    "submission_url": "https://codeforces.com/contest/1114/submission/101100633",
+    "tags": [
+      "brute force",
+      "greedy",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Dec/13/2020 18:40"
+  },
   "CF101103669": {
     "contest_id": 1114,
     "language": "GNU C++17",
